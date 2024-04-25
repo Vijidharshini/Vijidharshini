@@ -1,0 +1,111 @@
+
+.navbar1 {
+  /* background-color: hsl(0, 0%, 20%);*/
+  background-color: #444;
+   padding-top: 0;
+   padding-bottom: 8px;
+   padding-right: 30px;
+   color: white;
+   text-align: right;
+   font-family: sans-serif;
+   font-weight: bolder;
+   align-items: baseline;
+  
+ }
+
+ .navbar1 .main {
+  margin-top: 4px;
+ }
+
+ .navbar1 .main #logo{
+    height: 30px;
+    width: 30px;
+    padding-top: 5px;
+ }
+
+
+ .navbar1 #one{
+   padding-right: 810px;
+   font-weight: bold; 
+ }
+
+ .navbar1 button{
+   margin-left: 20px;
+   padding: 5px 10px;
+   border: 0;
+   font-size: 17px;
+   border: none;
+   cursor: pointer;
+   border-radius: 10px;
+   
+  
+  
+ }
+ .navbar1 button:hover
+ {
+  background: #ccc;
+ }
+
+
+ .navbar2 {
+  background-color: blueviolet;
+  overflow: hidden;
+  margin-top: 3px;
+ 
+}
+
+.navbar2 a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar2 a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 10px;
+
+}
+
+
+i{
+  margin-right: 5px;
+}
+
+
+.navbar2 .search-container {
+  float: right;
+}
+
+.navbar2 .search-container input[type="text"] {
+  padding: 5px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+  border-radius: 10px;
+  
+}
+
+.navbar2 .search-container button {
+  padding: 5px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
+.navbar2 .search-container button:hover {
+  background: #ccc;
+
+}
+ 
+ 

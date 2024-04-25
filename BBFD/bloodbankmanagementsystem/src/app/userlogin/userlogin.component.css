@@ -1,0 +1,145 @@
+
+.cut{
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.cut i{
+   font-size: 25px;
+   cursor: pointer;
+   padding-right: 5px;
+}
+
+.cut .cutbtn{
+    padding: 5px 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: 0;
+    color:#1fafe7; 
+}
+
+
+.cut .cutbtn:hover{
+    background-color: purple;
+    color: white;
+}
+
+.container {
+    max-width:350px;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 30px;
+
+    margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 1, 0.719);
+    border-radius: 5px;
+    
+}
+
+.container img{
+    text-align: center;
+    height: 90px;
+    width: 90px;
+    padding: 0 125px;
+ }
+
+.container .title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color:#1fafe7; 
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+
+
+}
+
+
+
+.container .form {
+    width: 100%;
+}
+
+.container .form .input_field{
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.container .form .input_field label {
+    margin-right: 10px;
+    width: 220px;
+    font-size: 17px;
+   
+
+}
+
+
+
+.container .form .input_field input{
+    width: 100%;
+    outline: none;
+    border: 1px solid #1fafe7; ;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+
+}
+
+
+
+
+.loginbtn{
+    width: 50%;
+    padding: 5px 10px; 
+    font-size: 18px;
+    border: 0;
+    background: #1fafe7; ;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    outline: none;
+    font-weight: bolder;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+   
+  }
+
+.loginbtn:hover {
+    background-color: purple;
+}
+
+
+
+
+
+.container .form p{
+   font-size: 17px;
+   justify-content: center;
+   padding-left: 50px;
+  
+
+}
+.container .form p a{
+    text-decoration: none;
+    padding-left:10px;
+    color: blue;
+    cursor: pointer;
+    
+}
+
+.container .form p a:hover{
+    color: green;
+    text-decoration: underline;
+}

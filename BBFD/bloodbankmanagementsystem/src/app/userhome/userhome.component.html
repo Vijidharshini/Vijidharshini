@@ -1,0 +1,29 @@
+
+<div class="navbar1">
+    <div class="main">
+      <img src="assets/images/logo.png" alt="" id="logo">
+      <span id="one">User Dashbord </span> Welcome,{{email}}
+      <button (click)=" logout()"><i class="fa-solid fa-right-from-bracket"></i>Logout</button>
+    </div>
+  </div>
+
+<div class="navbar2">
+  
+    <a routerLink="/user/bloodrequest" class="icon"><i class="fa-sharp fa-solid fa-plus-large"></i> Make Request</a>
+    <a routerLink="/user/allrequests" class="icon"><i class="fa-solid fa-list"></i> All Request</a>
+    <a routerLink="/user/donorlist"  class="icon"><i class="fa-sharp fa-solid fa-heart"></i> Donors List </a>
+    <a routerLink="/user/bloodstock"  class="icon">💉 Blood Stock</a> 
+   <!--- <a routerLink="/user/updateuser" class="icon"><i class="fa-solid fa-user"></i> Update Profile</a> -->
+
+    <div class="search-container">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+   </div>
+</div>
+
+
+<router-outlet></router-outlet>
+
+
+
+

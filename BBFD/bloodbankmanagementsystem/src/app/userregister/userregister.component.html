@@ -1,0 +1,77 @@
+<div class="container">
+    <form action="#" method="post">
+        <div class="title">
+            New User
+        </div>
+
+        <div class="form">
+
+            <div class="input_field">
+                <label for="name">Name:</label>
+                <input type="text" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" id="name" name="name"
+                    placeholder="Enter Name" required>
+            </div>
+
+            <div class="input_field">
+                <label for="mobile">Mobile:</label>
+                <input type="tel" [(ngModel)]="mobile" [ngModelOptions]="{standalone: true}" id="mobile" name="mobile"
+                    placeholder="Enter mobileNo" required>
+            </div>
+
+            <div class="input_field">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" [(ngModel)]="gender" [ngModelOptions]="{standalone: true}"
+                    placeholder="Select Gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+
+            <div class="input_field">
+                <label for="age">Age:</label>
+                <input type="number" [(ngModel)]="age" [ngModelOptions]="{standalone: true}" id="age" name="age"
+                    placeholder="Enter Age" required>
+            </div>
+
+            <div class="input_field">
+                <label for="address">Address:</label>
+                <input type="text" [(ngModel)]="address" [ngModelOptions]="{standalone: true}" id="address"
+                    name="address" placeholder="Enter Address" required>
+            </div>
+
+
+
+            <div class="input_field">
+                <label for="email">Email:</label>
+                <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true} " id="email" name="email"
+                    placeholder="Enter Email" required>
+            </div>
+
+            <div class="input_field">
+                <label for="password">Password:</label>
+                <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" id="password"
+                    name="password" placeholder="Enter Password" required>
+            </div>
+
+
+            <div class="input_field">
+                <label for="cPassword">Confirm Password:</label>
+                <input type="password" [(ngModel)]="cPassword" [ngModelOptions]="{standalone: true}" id="cPassword"
+                    name="cPassword" placeholder="Enter Confirm Password" required>
+
+            </div>
+            <hr>
+
+            
+            <button type="submit"  routerLink="/homepage">Cancel</button>
+    
+            <button type="submit" (click)="register()">Register</button>
+
+            <p>Already have an Account?<a routerLink="/userlogin">Login here </a></p>
+
+
+        </div>
+    </form>
+</div>

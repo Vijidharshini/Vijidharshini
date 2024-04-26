@@ -1,0 +1,27 @@
+
+
+  <div class="navbar1">
+    <div class="main">
+      <img src="assets/images/logo.png" alt="" id="logo">
+      <span id="one">Admin Dashbord </span> Welcome,
+      <span id="email" *ngFor="let admin of admin">{{admin.name}}</span>
+      <button (click)="logout()"><i class="fa-solid fa-right-from-bracket"></i>Logout</button>
+    </div>
+  </div>
+
+<div class="navbar2">
+  
+    <a routerLink="/admin/add" class="icon" ><i class="fa-solid fa-user-plus"></i> Add Donor</a>
+    <a routerLink="/admin/alldonors"  class="icon"><i class="fa-solid fa-users"></i> Donor List</a>
+    <a routerLink="/admin/allusers" class="icon"><i class="fa-solid fa-user"></i> Users</a>
+    <a routerLink="/admin/allrequests" class="icon">🩸 Blood Requests</a>
+    <a routerLink="/admin/bloodstock" class="icon">💉 Blood Stock</a>
+
+    <div class="search-container">
+      <input type="text" placeholder="Search...">
+      <button  type="submit">Search</button>
+   </div>
+</div>
+
+
+<router-outlet></router-outlet>

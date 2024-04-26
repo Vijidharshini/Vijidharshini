@@ -1,0 +1,360 @@
+
+
+.home-main{
+   /* background: url('assets/images/bg1.jpg') no-repeat center center fixed;*/
+   min-height: 100vh;
+  
+ }
+ 
+ .home-main .bg{
+  text-align: right;
+ }
+
+ .home-main .bg img{
+   width: 500px;
+   height: 400px;
+   padding-right: 30px;
+   padding-top: 20px;
+ }
+
+ nav{
+	height: 65px;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 3rem;
+	text-transform: uppercase;
+	position: sticky;
+}
+
+nav .brand{
+	display: flex;
+	align-items: center;
+
+	
+}
+
+nav .brand img{
+	height:60px;
+	margin:0 3px;
+	margin-top: 10px;
+   padding-top: 10px;
+  
+}
+
+
+nav .brand a{
+	color: white;
+	text-decoration: none;
+	font-size: 1.5rem;
+	font-style: italic;
+	padding-left: 5px;
+	padding-top: 20px;
+	font-weight: bold;
+
+
+}
+
+nav .brand a:hover{
+   color:#00FFFF;
+
+}
+
+nav ul{
+	display: flex;
+}
+
+nav ul li{
+	list-style: none;
+	margin: 0 10px;
+
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	transition: .3s ease;
+	position: relative;
+   font-size: 1.2rem;
+}
+
+nav ul li a:hover{
+	color:#00FFFF;
+
+}
+
+nav ul li a::after{
+	content: '';
+	width: 100%;
+	height: 3px;
+	background: #00FFFF;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .3s ease-in-out;
+
+}
+
+nav ul li a:hover::after{
+	transform: scaleX(1);
+
+}
+
+
+nav .fa{
+	color: white;
+	font-size: 2rem;
+	display: none;
+}
+
+
+
+
+
+
+ .main-content{  
+   position: absolute;
+    top: 15%;
+    left: 4%;
+    padding-left: 20px;
+    width: 75%;
+ }
+
+
+
+ .main-content h1{
+   font-size: 3rem;
+    color:white;
+    line-height: 70px;
+    font-style: italic;
+  
+    
+ }
+ .main-content p{
+    font-size: 1rem;
+    color:white;
+    font-style: italic;
+    font-family: sans-serif;
+   
+ }
+ .main-content h3{
+   font-size: 1.5rem;
+    color:white;
+    line-height: 70px;
+    font-style: italic;
+    
+ }
+
+ .main-content .a{
+   padding-left: 10rem;
+   padding-top: 15px;
+   font-size: 1.5rem;
+   text-decoration: none;
+   color: white;
+   font-style: italic;
+ }
+
+ .main-content .a:hover{
+   color:#00FFFF;
+ 
+ }
+
+ 
+ .gradient-btn{
+    width: 140px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color:red;
+    position: absolute;
+    border-radius: 10px;
+    background-size: 200px auto;
+    transition: .3s ease-in-out;
+    background:white;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+  
+   
+   
+ }
+ 
+ .main-content.gradient-btn{
+   width: 100px;
+   height: 45px;
+   margin-top: 1.5rem;
+   text-transform: uppercase;
+  
+   
+
+}
+ 
+ .gradient-btn:hover{
+   background:#00FFFF;
+   color: white;
+   
+ }
+ 
+
+ /* About section Start */
+ 
+ 
+ 
+ .about{
+    padding: 1rem;
+    text-align: center;
+    background-color:#e9f1fa;
+   
+ 
+ }
+ .about > h1{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+ 
+ }
+ .about-sub{
+    display: flex ;
+    max-width: 900px;
+    margin: 10px auto;
+    text-align: left;
+ 
+ }
+ 
+ .about-sub > img{
+    max-height: 250px;
+    max-width: 90%;
+    width: 400px;
+    padding-right: 5rem ;
+    animation:animateimage 1s linear ;
+  }
+ 
+ 
+ .about-sub .sub-sub-about a{
+    margin-top: 5px;
+ }
+ 
+ 
+ 
+ 
+ 
+ .about-sub .sub-sub-about{
+    padding: 1rem;
+    animation: animatetext 1s linear;
+ }
+ 
+ 
+ 
+ .about-sub .sub-sub-about span{
+   font-weight: bold;
+   color: #f71111;
+   font-size: 20px;
+ }
+ 
+ 
+ .about-sub .sub-sub-about p{
+    font-size: 18px;
+    padding-bottom: 5px;
+ }
+ .about-sub .sub-sub-about h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+   text-decoration: underline;
+   cursor: pointer;
+ }
+
+ .about-sub .sub-sub-about h2:hover{
+   color: #00FFFF;
+ }
+ 
+ .about-sub .gradient-btn{
+    width: 150px;
+    margin-top: 5px;
+    height: 30px;
+    font-size: 12px;
+ }
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+ .contact {
+   padding: 1rem;
+   text-align: center;
+   background-color: white;
+ }
+
+
+ .contact h1{
+   font-size: 2.5rem;
+   margin: 1.5rem 0;
+ }
+ .contact form{
+   max-width: 400px;
+   margin: 0 auto;
+   font-size: 15px;
+}
+
+.contact label {
+   display: block;
+   margin-bottom: 8px;
+   font-size: 15px;
+}
+
+.contact ::placeholder{
+   text-align: center;
+   font-size: 15px;
+}
+
+.contact input, textarea {
+   width: 100%;
+   padding: 8px;
+   margin-bottom: 16px;
+   box-sizing: border-box;
+}
+
+.contact input[type="submit"] {
+   background-color: royalblue;
+   color: white;
+   cursor: pointer;
+   border: 0;
+
+   font-size: 15px;
+}
+
+.contact input[type="submit"]:hover {
+   background-color: rgb(12, 69, 241);
+}
+ 
+
+
+ 
+ 
+ footer {
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+   padding: 20px;
+}
+
+.social-icons a {
+   color: #fff;
+   text-decoration: none;
+   margin: 0 10px;
+   font-size: 30px;
+}
+
+.social-icons a :hover{
+ color:black;
+}

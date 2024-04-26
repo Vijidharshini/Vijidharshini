@@ -1,0 +1,155 @@
+
+.container {
+    max-width:900px;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 1, 0.719);
+    border-radius: 5px;
+    display: flex;
+    
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1fafe7;
+    text-transform: uppercase;
+    text-align: center;
+
+
+}
+
+.container .form {
+    width: 100%;
+}
+
+
+.container .form .input_field{
+    margin-bottom: 30px;
+    align-items: center;
+    display: inline-block;
+    padding-left: 55px;
+}
+
+.container .form .input_field label {
+    margin-right: 10px;
+    width: 220px;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+
+
+.container .form .input_field input{
+
+    outline: none;
+    border: 1px solid #1fafe7;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    padding-left: 30px;
+    width: 100%; /* Adjust the width as needed */
+    padding: 5px 10px;
+    box-sizing: border-box;
+
+}
+
+.container .form .input_field select
+{
+    width: 100%;
+    outline: none;
+    border: 1px solid  #1fafe7;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+
+.savebtn{
+    width: 30%;
+    padding: 5px 13px; 
+    font-size: 18px;
+    border: 0;
+    background:  #1fafe7;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    outline: none;
+    font-weight: bolder;
+    margin-top: 5px;
+     margin-left: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 5px;
+   
+   
+  }
+
+.savebtn:hover {
+    background-color: purple;
+}
+
+
+.canclebtn{
+   
+    padding: 5px 13px; 
+    font-size: 18px;
+    border: 0;
+    background:  #1fafe7;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    outline: none;
+    font-weight: bolder;
+    margin-top: 5px;
+    margin-left: 100px;
+    text-transform: uppercase;
+    text-align: center;
+   
+   
+}
+
+.canclebtn:hover {
+    background-color: purple;
+}
+
+
+
+.clearbtn{
+ 
+    padding: 5px 13px; 
+    font-size: 18px;
+    border: 0;
+    background:  #1fafe7;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    outline: none;
+    font-weight: bolder;
+    margin-top: 5px;
+    margin-left: 100px;
+    text-transform: uppercase;
+    text-align: center;
+   
+   
+   
+}
+
+.clearbtn:hover {
+    background-color: purple;
+}
+

@@ -1,0 +1,54 @@
+<h3>All Blood Requests</h3>
+
+<div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>BloodGroup</th>
+          <th>Need of Units</th>
+          <th>Disease</th>
+          <th>Mobile</th>
+          <th>Gender</th>
+          <th>Age</th>
+          <th>Address</th>
+          <th>Date</th>
+       1<!--   <th colspan="2">Operation</th> -->
+  
+  
+          <!-- Add more columns as needed -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let requesting of requests">
+          <td>{{ requesting.id }}</td>
+          <td>{{ requesting.name }}</td>
+          <td>{{ requesting.email}}</td>
+          <td>{{ requesting.bloodGroup}}</td>
+          <td>{{ requesting.units}}</td>
+          <td>{{ requesting.disease}}</td>
+          <td>{{ requesting.mobile}}</td>
+          <td>{{ requesting.gender}}</td>
+          <td>{{ requesting.age}}</td>
+          <td>{{ requesting.address}}</td>
+          <td>{{ requesting.date}}</td>
+  
+  <!--
+          <td>
+            <a href="" data-toggle="tooltip" data-placement="bottom"
+              title="UPDATE"><i class="fa fa-edit" aria-hidden="true"></i></a>
+          </td>
+  
+          <td>
+            <a href="" data-toggle="tooltip" data-placement="bottom"
+              title="DELETE"><i class="fa fa-trash" aria-hidden="true"></i></a>
+          </td>
+        -->
+  
+          <!-- Display more properties as needed -->
+        </tr>
+      </tbody>
+    </table>
+  </div>

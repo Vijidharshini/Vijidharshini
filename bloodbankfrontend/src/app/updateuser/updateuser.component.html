@@ -1,0 +1,75 @@
+<div class="container">
+    <form action="#" method="post">
+        <div class="title">
+            Update Profile
+        </div>
+
+        <div class="form">
+
+            <div class="input_field">
+                <label for="name">Name:</label>
+                <input type="text"  id="name" name="name"
+                    placeholder="Enter Name" required>
+            </div>
+
+            <div class="input_field">
+                <label for="mobile">Mobile:</label>
+                <input type="tel"  id="mobile" name="mobile"
+                    placeholder="Enter mobileNo" required>
+            </div>
+
+            <div class="input_field">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" 
+                    placeholder="Select Gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+
+            <div class="input_field">
+                <label for="age">Age:</label>
+                <input type="number"  id="age" name="age"
+                    placeholder="Enter Age" required>
+            </div>
+
+            <div class="input_field">
+                <label for="address">Address:</label>
+                <input type="text" id="address"
+                    name="address" placeholder="Enter Address" required>
+            </div>
+
+
+
+            <div class="input_field">
+                <label for="email">Email:</label>
+                <input type="email"  id="email" name="email"
+                    placeholder="Enter Email" required>
+            </div>
+
+            <div class="input_field">
+                <label for="password">Password:</label>
+                <input type="password"  id="password"
+                    name="password" placeholder="Enter Password" required>
+            </div>
+
+
+            <div class="input_field">
+                <label for="cPassword">Confirm Password:</label>
+                <input type="password"  id="cPassword"
+                    name="cPassword" placeholder="Enter Confirm Password" required>
+
+            </div>
+            <hr>
+
+            
+            <button class="clearbtn" type="submit" (click)="clearForm()">Clear Form</button> 
+            <button class="savebtn" type="submit" (click)="updateUser()">Update Profile</button>
+            <button class="canclebtn" type="submit" routerLink="/user/userhome">Cancel</button>
+
+
+        </div>
+    </form>
+</div>

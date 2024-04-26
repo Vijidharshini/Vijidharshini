@@ -1,0 +1,28 @@
+<h3>Avaliable Blood Stock</h3>
+<div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Bood Group</th>
+          <th>No of Donors</th>
+          <th>Units of Available Blood</th>
+         
+  
+  
+          <!-- Add more columns as needed -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let bloodDetails of bloodDetails">
+          <td>{{ bloodDetails.id }}</td>
+          <td>{{ bloodDetails.bloodGroup}}</td>
+          <td>{{ bloodDetails.noOfDonors}}</td>
+          <td>{{ bloodDetails.unitsAvailable}}</td>
+         
+  
+          <!-- Display more properties as needed -->
+        </tr>
+      </tbody>
+    </table>
+  </div>

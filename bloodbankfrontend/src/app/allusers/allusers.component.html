@@ -1,0 +1,49 @@
+<h3>All Users List</h3>
+
+<div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Full Name</th>
+          <th>Mobile</th>
+          <th>Gender</th>
+          <th>Age</th>
+          <th>Address</th>
+          <th>Email</th>
+          <th>Password</th>
+         
+  
+  
+          <!-- Add more columns as needed -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.userId }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.mobile}}</td>
+          <td>{{ user.gender}}</td>
+          <td>{{ user.age}}</td>
+          <td>{{ user.address}}</td>
+          <td>{{ user.email}}</td>
+          <td>{{ user.cPassword}}</td>
+  
+  
+          <!--
+          <td>
+            <a href="" data-toggle="tooltip" data-placement="bottom"
+              title="UPDATE"><i class="fa fa-edit" aria-hidden="true"></i></a>
+          </td>
+  
+          <td>
+            <a href="" data-toggle="tooltip" data-placement="bottom"
+              title="DELETE"><i class="fa fa-trash" aria-hidden="true"></i></a>
+          </td>
+  
+        -->
+          <!-- Display more properties as needed -->
+        </tr>
+      </tbody>
+    </table>
+  </div>

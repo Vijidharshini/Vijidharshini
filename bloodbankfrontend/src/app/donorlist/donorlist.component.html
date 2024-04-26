@@ -1,0 +1,53 @@
+
+<h3>All Donors List</h3>
+
+<div class="table-container">
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>FName</th>
+        <th>LName</th>
+        <th>BloodGroup</th>
+        <th>UnitsOfBlood</th>
+        <th>Mobile</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Disease</th>
+        <th>State</th>
+        <th>City</th>
+        <th>Address</th>
+        <th>Date</th>
+
+
+        <!-- Add more columns as needed -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let donor of donors">
+        <td>{{ donor.dId }}</td>
+        <td>{{ donor.fname }}</td>
+        <td>{{ donor.lname }}</td>
+        <td>{{ donor.bloodGroup}}</td>
+        <td>{{ donor.unitsOfBlood}}</td>
+        <td>{{ donor.mobile}}</td>
+        <td>{{ donor.age}}</td>
+        <td>{{ donor.gender}}</td>
+        <td>{{ donor.disease}}</td>
+        <td>{{ donor.state}}</td>
+        <td>{{ donor.city}}</td>
+        <td>{{ donor.address}}</td>
+        <td>{{ donor.date}}</td>
+
+
+
+        <!-- Display more properties as needed    routerLink='/admin/alldonors/update/{{donor.dId}}' -->
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+

@@ -1,0 +1,159 @@
+<div class="container">
+    <form [formGroup]="myForm">
+        <div class="title">
+            Add New Donor
+        </div>
+
+        <div class="form">
+
+
+            <div class="input_field">
+                <label for="fname">First Name:</label>
+                <input type="text" [(ngModel)]="fname" [ngModelOptions]="{standalone: true}"
+                    placeholder="Enter First Name" required>
+                <div *ngIf="myForm.get('fname').hasError('required')">
+
+                </div>
+            </div>
+
+            <div class="input_field">
+                <label for="lname">Last Name:</label>
+                <input type="text" [(ngModel)]="lname" [ngModelOptions]="{standalone: true}"
+                    placeholder="Enter Last Name" required>
+                <div *ngIf="myForm.get('lname').hasError('required')">
+
+                </div>
+            </div>
+
+
+
+
+            <div class="input_field">
+                <label for="bloodGroup">BloodGroup:</label>
+                <select id="bloodGroup" name="bloodGroup" [(ngModel)]="bloodGroup" [ngModelOptions]="{standalone: true}"
+                    placeholder="Select BloodGroup" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+
+                <div *ngIf="myForm.get('bloodGroup').hasError('required')">
+
+                </div>
+            </div>
+
+            <div class="input_field">
+                <label for="unitsOfBlood">Units Of Blood</label>
+                <input type="number" [(ngModel)]="unitsOfBlood" [ngModelOptions]="{standalone: true}" id="unitsOfBlood"
+                    name="unitsOfBlood" placeholder="Enter Units Of Blood" required>
+                <div *ngIf="myForm.get('unitsOfBlood').hasError('required')">
+
+                </div>
+            </div>
+
+
+
+
+            <div class="input_field">
+                <label for="mobile">Mobile:</label>
+                <input type="tel" [(ngModel)]="mobile" [ngModelOptions]="{standalone: true}" id="mobile" name="mobile"
+                    placeholder="Enter mobileNo" required>
+                <div *ngIf="myForm.get('mobile').hasError('required')">
+
+                </div>
+
+            </div>
+
+            <div class="input_field">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" [(ngModel)]="gender" [ngModelOptions]="{standalone: true}"
+                    placeholder="Select Gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <div *ngIf="myForm.get('gender').hasError('required')">
+
+                </div>
+            </div>
+
+
+
+
+            <div class="input_field">
+                <label for="age">Age:</label>
+                <input type="number" [(ngModel)]="age" [ngModelOptions]="{standalone: true}" id="age" name="age"
+                    placeholder="Enter Age" required>
+                <div *ngIf="myForm.get('age').hasError('required')">
+
+                </div>
+            </div>
+
+
+            <div class="input_field">
+                <label for="disease">Disease:</label>
+                <input type="text" [(ngModel)]="disease" [ngModelOptions]="{standalone: true}" id="disease"
+                    name="disease" placeholder="Enter disease if you have otherwise No" required>
+                <div *ngIf="myForm.get('disease').hasError('required')">
+
+                </div>
+            </div>
+
+
+
+            <div class="input_field">
+                <label for="state">State:</label>
+                <input type="text" [(ngModel)]="state" [ngModelOptions]="{standalone: true}" id="state" name="state"
+                    placeholder="Enter State" required>
+                <div *ngIf="myForm.get('state').hasError('required')">
+
+                </div>
+
+            </div>
+
+            <div class="input_field">
+                <label for="city">City:</label>
+                <input type="text" [(ngModel)]="city" [ngModelOptions]="{standalone: true}" id="city" name="city"
+                    placeholder="Enter City" required>
+                <div *ngIf="myForm.get('city').hasError('required')">
+
+                </div>
+            </div>
+
+
+
+
+            <div class="input_field">
+                <label for="address">Address:</label>
+                <input type="text" [(ngModel)]="address" [ngModelOptions]="{standalone: true}" id="address"
+                    name="address" placeholder="Enter Address" required>
+                <div *ngIf="myForm.get('address').hasError('required')">
+
+                </div>
+            </div>
+
+            <div class="input_field">
+                <label for="date">Date:</label>
+                <input type="date" [(ngModel)]="date" [ngModelOptions]="{standalone: true}" id="date" name="date"
+                    placeholder="Enter Address" required>
+                <div *ngIf="myForm.get('date').hasError('required')">
+
+                </div>
+            </div>
+            <hr>
+
+
+
+            <button class="clearbtn" type="submit" (click)="clearForm()">Clear Form</button>
+            <button class="savebtn" type="submit" (click)="addDonor()">Save Donor</button>
+            <button class="canclebtn" type="submit" routerLink="/adminhome">Cancel</button>
+
+        </div>
+    </form>
+</div>
